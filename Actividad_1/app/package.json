@@ -1,0 +1,14 @@
+{
+  "name": "node-nginx",
+  "version": "1.0.0",
+  "description": "Práctica Node.js + Nginx + Packer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "David Huerta Bustamante",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}

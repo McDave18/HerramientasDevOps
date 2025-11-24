@@ -1,0 +1,135 @@
+Realizando build :) ...
+Realizando build :) ...
+{
+    "ReservationId": "r-000cbb26d9f4c497e",
+    "OwnerId": "291720501845",
+    "Groups": [],
+    "Instances": [
+        {
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "be7f400a-6ed4-40e2-ba83-93193b0ac33d",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2025-11-24T01:11:29+00:00",
+                        "AttachmentId": "eni-attach-0b08b2982b9b8fa4a",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching",
+                        "NetworkCardIndex": 0
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupId": "sg-01ea1ab17648e051c",
+                            "GroupName": "launch-wizard-1"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "16:ff:f0:6a:68:87",
+                    "NetworkInterfaceId": "eni-0fdd4ce3a66abbf06",
+                    "OwnerId": "291720501845",
+                    "PrivateDnsName": "ip-172-31-72-35.ec2.internal",
+                    "PrivateIpAddress": "172.31.72.35",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-72-35.ec2.internal",
+                            "PrivateIpAddress": "172.31.72.35"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-021beb4df18cc35ed",
+                    "VpcId": "vpc-0c683ec344d69c96d",
+                    "InterfaceType": "interface",
+                    "Operator": {
+                        "Managed": false
+                    }
+                }
+            ],
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupId": "sg-01ea1ab17648e051c",
+                    "GroupName": "launch-wizard-1"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "unir-node-nginx-auto"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 2
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled",
+                "HttpProtocolIpv6": "disabled",
+                "InstanceMetadataTags": "disabled"
+            },
+            "EnclaveOptions": {
+                "Enabled": false
+            },
+            "PrivateDnsNameOptions": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "MaintenanceOptions": {
+                "AutoRecovery": "default",
+                "RebootMigration": "default"
+            },
+            "CurrentInstanceBootMode": "legacy-bios",
+            "Operator": {
+                "Managed": false
+            },
+            "InstanceId": "i-0f089a382070cb25d",
+            "ImageId": "ami-046dc82b95c636609",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "PrivateDnsName": "ip-172-31-72-35.ec2.internal",
+            "PublicDnsName": "",
+            "StateTransitionReason": "",
+            "KeyName": "AMI-Actividad-1",
+            "AmiLaunchIndex": 0,
+            "ProductCodes": [],
+            "InstanceType": "t3.nano",
+            "LaunchTime": "2025-11-24T01:11:29+00:00",
+            "Placement": {
+                "AvailabilityZoneId": "use1-az5",
+                "GroupName": "",
+                "Tenancy": "default",
+                "AvailabilityZone": "us-east-1f"
+            },
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "SubnetId": "subnet-021beb4df18cc35ed",
+            "VpcId": "vpc-0c683ec344d69c96d",
+            "PrivateIpAddress": "172.31.72.35"
+        }
+    ]
+}
+Build/Deploy finalizado. Validar en consola EC2
