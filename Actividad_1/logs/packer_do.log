@@ -1,0 +1,7 @@
+2025/11/24 20:04:27 [INFO] Packer version: 1.14.3 [go1.24.0 windows amd64]
+2025/11/24 20:04:27 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/11/24 20:04:27 [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\david\AppData\Roaming\packer.config
+2025/11/24 20:04:27 [WARN] Config file doesn't exist: C:\Users\david\AppData\Roaming\packer.config
+2025/11/24 20:04:27 [INFO] Setting cache directory: D:\HerramientasDevOps\Actividad_1\packer_cache
+e: cannot determine if process is in background: Process background check error: not implemented yet
+2025/11/24 20:05:11 ui error: Cancelling build after receiving interrupt

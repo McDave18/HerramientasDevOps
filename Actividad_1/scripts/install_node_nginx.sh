@@ -2,7 +2,7 @@ set -e
 
 echo "Actualizacion de paquetes"
 sudo apt-get update -y
-sudo apt-get upgrade -y
+#sudo apt-get upgrade -y
 
 echo "Utilidades"
 sudo apt-get install -y curl git
@@ -14,8 +14,14 @@ sudo apt-get install -y nginx
 
 echo "Configuraciones y permisos"
 sudo mkdir -p /var/www/nodeapp
-sudo chown ubuntu:ubuntu /var/www/nodeapp
 
+# Detectar usuario apropiado (ubuntu en AWS, root en DO)
+APP_USER="ubuntu"
+if ! id "$APP_USER" >/dev/null 2>&1; then
+  APP_USER="$(whoami)"
+fi
+
+sudo chown "$APP_USER:$APP_USER" /var/www/nodeapp
 cd /var/www/nodeapp
 
 # Ctrl c + v 
